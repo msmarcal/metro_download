@@ -46,7 +46,8 @@ def cli(d, c):
 
     """
 
-    valid_cities = ('sao-paulo', 'brasilia', 'abc', 'rio', 'campinas', 'curitiba', 'metrobh', 'portoalegre', 'espiritosanto', 'maringa')
+    valid_cities = ('sao-paulo', 'brasilia', 'abc', 'rio', 'campinas',
+                    'curitiba', 'metrobh', 'portoalegre', 'espiritosanto', 'maringa')
 
     if c not in valid_cities:
         click.echo('Error: Invalid City.')

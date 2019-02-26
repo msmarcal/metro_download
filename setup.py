@@ -7,7 +7,8 @@ setup(
     author='Marcelo Subtil Marcal',
     author_email='marcelo@smarcal.com',
     license='MIT',
-    py_modules=['metro'],
+    py_modules=['metro_download'],
+    packages=['metro_download'],
     install_requires=[
         'datetime',
         'Click',
