@@ -23,10 +23,10 @@ def download(target_url, location):
         for data in tqdm(iterable=response.iter_content(chunk_size=1024), total=total_size / 1024, unit='KB'):
             fd.write(data)
 
-
+# TODO: set save location to a no dash argument: ie: metro_download -c spo /home/user/desktop
 @click.command()
-@click.option('--d', default='./', help='Save location.')
-@click.option('--c', default='curitiba', help='City')
+@click.option('-d', default='./', help='Save location.')
+@click.option('-c', default='curitiba', help='City')
 def cli(d, c):
     """
     Downloads Brazilian Metro Newspaper pdf.
