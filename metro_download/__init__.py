@@ -25,8 +25,8 @@ def download(target_url, location):
 
 
 @click.command()
-@click.option('--d', default='./', help='Save location.')
-@click.option('--c', default='curitiba', help='City')
+@click.option('-d', default='./', help='Save location.')
+@click.option('-c', default='curitiba', help='City')
 def cli(d, c):
     """
     Downloads Brazilian Metro Newspaper pdf.
